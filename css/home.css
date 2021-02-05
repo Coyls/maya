@@ -1,0 +1,221 @@
+/* WRAPPER */
+
+body {
+    overflow-x: hidden;
+}
+
+.wrapper {
+    background-size: contain;
+    position: relative;
+    top: 120px;
+    height: 150px;
+    border-bottom: solid 2px black;
+    width: 100%;
+    transition: 1s;
+}
+
+.wrapper:hover {
+    height: 350px;
+    border-bottom: ridge 2px black;
+}
+
+.img-wrapper {
+    position: relative;
+    height: 150px;
+    width: 100%;
+    background-image: url("../images/wrapper.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    filter: blur(2px);
+    transition: 1s;
+}
+
+
+.wrapper:hover .img-wrapper {
+    cursor: pointer;
+    height: 350px;
+    filter: blur(0);
+}
+
+.wrapper h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 6px 7px 5px rgba(0, 0, 0, 0.5);
+    color: #FFF;
+}
+
+/* MIDDLE-PAGE */
+
+#middle-page {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 1200px;
+    width: 100vw;
+    top: 120px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* FILTER / BASKET */
+
+.container-basket, .container-filter {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 400px;
+    height: 1200px;
+    background-color: #000;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.basket-title, .filter-title {
+    position: relative;
+    text-align: center;
+    bottom: 17px;
+    text-shadow: 6px 7px 5px rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+.article, .filter {
+    position: relative;
+    width: 75%;
+    height: 90%;
+    color: #fff;
+}
+
+
+/* FILTER */
+
+.container-filter {
+    border-right: 1px solid #fff;
+}
+
+.box-filter {
+    position: relative;
+    top: 20px;
+    left: 0;
+}
+
+.large-filter {
+    margin-bottom: 10px;
+    margin-top: 25px;
+    font-size: 30px;
+}
+
+.little-filter {
+    position: relative;
+    left: 5px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+label {
+    margin-left: 6px;
+}
+
+/* ALVEOLUS */
+
+.container {
+    position: relative;
+    width: 1200px;
+    height: 1200px;
+}
+
+.line {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.line-0 {
+    left: 150px;
+    margin-top: 5px;
+}
+
+.line-1 {
+    transform: translateY(-75px);
+}
+
+.line-2 {
+    left: 150px;
+    transform: translateY(-150px);
+}
+
+.line-3 {
+    transform: translateY(-225px);
+}
+
+.line-4 {
+    left: 150px;
+    transform: translateY(-300px);
+}
+
+.alveolus {
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    height: 300px;
+    width: 300px;
+}
+
+.alveolus:hover .img-honey {
+    filter: blur(3px);
+}
+
+.honey {
+    position: absolute;
+    width: 295px;
+    height: 295px;
+    z-index: 3;
+}
+
+.img-honey {
+    position: relative;
+    width: 290px;
+    height: 290px;
+    z-index: 4;
+}
+
+.text-alveolus {
+    position: absolute;
+    z-index: 8;
+    font-size: 30px;
+    top: 65px;
+    left: -300px;
+    text-align: center;
+    transition-duration: 0.5s;
+}
+
+.alveolus:hover .text-alveolus {
+    left: 90px;;
+}
+
+.add-button {
+    position: relative;
+    border: 4px solid black;
+    border-radius: 50%;
+    padding-top: 16px;
+    width: 70px;
+    height: 70px;
+    top: 10px;
+    left: 25px;
+}
+
+.add-button:hover {
+    background-color: #ffd400;
+}
+
+/* BASKET */
+
+.container-basket {
+    border-left: 1px solid #fff;
+}
+
+
+        

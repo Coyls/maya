@@ -1,0 +1,278 @@
+/* RESPONSIVE */
+
+/* --------------------------------------------- */
+@media screen and (max-width: 1000px) {
+    .presentation:nth-of-type(1) {
+        flex-direction: column;
+    }
+
+    .presentation:nth-of-type(2) {
+        flex-direction: column-reverse;
+    }
+}
+
+/* --------------------------------------------- */
+
+
+@media screen and (max-width: 640px) {
+
+    /* HEADER */
+    header {
+        align-items: center;
+        justify-content: center;
+    }
+
+    header nav {
+        position: relative;
+        left: 0;
+        top: 0;
+        font-size: 11px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    header h1 {
+        color: white;
+        position: relative;
+        margin-left: 0;
+        font-size: 65px;
+        padding-bottom: 9px;
+        text-align: center;
+
+    }
+
+
+    /* MIDDLE-PAGE HOME */
+    #middle-page {
+        flex-direction: column;
+        height: 4520px;
+        justify-content: flex-start;
+    }
+
+
+    /* FILTRE / PANIER */
+    .container-basket, .container-filter {
+        width: 100%;
+        height: 250px;
+    }
+
+    .basket-title, .filter-title {
+        bottom: 0;
+    }
+
+    .article, .filter {
+        overflow: auto;
+        width: 95%;
+        height: 60%;
+        border-radius: 40px;
+    }
+
+    /* FILTRE */
+    .container-filter {
+        border-radius: 40px;
+    }
+
+    .box-filter {
+        display: flex;
+        flex-direction: row;
+        top: 20px;
+        left: 20px;
+    }
+
+    .large-filter {
+        margin-bottom: 10px;
+        margin-top: 10px;
+        font-size: 25px;
+
+        padding: 7px;
+    }
+
+    .little-filter {
+        left: 5px;
+        margin-bottom: 10px;
+        margin-right: 20px;
+        font-size: 20px;
+    }
+
+    /* HEXAGONE */
+    .container {
+        width: 450px;
+        height: 3900px;
+    }
+
+    .line {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+    }
+
+    .line-0 {
+        left: 0;
+    }
+
+    .line-1 {
+        transform: translateY(-225px);
+    }
+
+    .line-2 {
+        left: 0;
+        transform: translateY(-525px);
+    }
+
+    .line-3 {
+        transform: translateY(-750px);
+    }
+
+    .line-4 {
+        left: 0;
+        transform: translateY(-1050px);
+    }
+
+    .line-0 .alveolus:nth-of-type(even), .line-3 .alveolus:nth-of-type(even), .line-4 .alveolus:nth-of-type(even), .line-1 .alveolus:nth-of-type(odd), .line-2 .alveolus:nth-of-type(odd) {
+        left: 150px;
+    }
+
+    .alveolus:nth-of-type(2) {
+        top: -75px;
+    }
+
+    .alveolus:nth-of-type(3) {
+        top: -150px;
+    }
+
+    .alveolus:nth-of-type(4) {
+        top: -225px;
+    }
+
+    /* PANIER */
+    .container-basket {
+        border-radius: 40px;
+        height: 600px;
+    }
+
+    .button-commande {
+        position: absolute;
+        color: black;
+        text-align: center;
+        background-color: white;
+        padding: 10px;
+        border-radius: 40px;
+        top: 80%;
+        left: 38%;
+
+
+    }
+
+    /*MIDDLE-PAGE : WHO_WE_ARE / CONTACT*/
+    #middle-page {
+        height: auto;
+
+    }
+
+    #container-information {
+        height: 100%;
+        width: 90%;
+    }
+
+    .presentation {
+
+    }
+
+
+    #first {
+        width: 400px;
+        height: 300px;
+        margin: 0 auto;
+    }
+
+    #second {
+        width: 413px;
+        height: 253px;
+    }
+
+    .box-filter {
+        overflow: hidden;
+    }
+
+    .p-container {
+
+    }
+
+    /* FOOTER-INDEX */
+    #footer-index {
+        position: relative;
+        width: 100%;
+        height: 240px;
+        background-color: black;
+
+    }
+
+
+    /* CONTACT */
+    #container-bee {
+        align-content: center;
+        justify-content: center;
+        transform: translateY(-60px);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 300px;
+    }
+
+    #container-bee h2 {
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 75px;
+
+    }
+
+    #container-information {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #bee {
+        width: 200px;
+        height: 200px;
+        margin-left: 35px;
+
+    }
+
+    .container-form {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .explication {
+        width: 100%;
+        font-size: 12px;
+        text-indent: 20px;
+        padding: 20px;
+
+    }
+
+    .form-bee {
+        width: 100%;
+        padding: 20px;
+        margin-top: 30px;
+        font-size: 12px;
+
+    }
+
+    #nom, #email, #container-pub, #coments, #submit {
+        margin-top: 3px;
+        margin-bottom: 15px;
+    }
+
+
+}
+
+/* --------------------------------------------- */

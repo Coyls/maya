@@ -1,0 +1,100 @@
+/* WHO_WE_ARE */
+
+#container-information h2{
+    position: relative;
+    text-align: center;
+    text-shadow: 6px 7px 5px rgba(255,255,255,0.5);
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.presentation{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.img-container{
+    position: relative;
+    border-radius: 20px;
+    height: 100%;
+    width: auto;
+    object-fit: scale-down;
+
+    animation-name : img-apparition; 
+    animation-duration : 2s; 
+    animation-direction : normal; /* (reverse, alternate, alternate-reverse) */
+    animation-iteration-count : 1;
+}
+
+@keyframes img-apparition{
+        0%{
+            right: 1000px;
+        }
+        50%{
+            right: -245px;
+        }
+        100%{
+            right: 0;
+    }
+}
+
+
+#first{
+    width: 330px;
+    height: 550px;  
+    margin: 20px;
+    
+}
+
+#second{
+    width: 300px;
+    height: 550px;  
+    margin: 20px;
+}
+
+.p-container{
+    background-color: #000;
+    position: relative;
+    width: 100%;
+    height: auto;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    -webkit-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+    overflow: auto;
+    margin: 20px;
+    
+    animation-name : text-apparition; 
+    animation-duration : 2s; 
+    animation-direction : normal; /* (reverse, alternate, alternate-reverse) */
+    animation-iteration-count : 1; 
+
+}
+
+@keyframes text-apparition{
+        0%{
+            left: 1000px;
+        }
+        50%{
+            left: -245px;
+        }
+        100%{
+            left: 0;
+    }
+}
+
+.lorem{
+    text-indent: 50px;
+    margin: 20px;
+    color: #fff;
+    
+}
+
+
+
